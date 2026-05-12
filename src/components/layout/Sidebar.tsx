@@ -10,20 +10,24 @@ const NAV_ITEMS: Record<string, { href: string; label: string; icon: string }[]>
     { href: '/supplier/post', label: 'Post Surplus', icon: '➕' },
     { href: '/supplier/history', label: 'History', icon: '📋' },
     { href: '/supplier/ads', label: 'Ad Campaigns', icon: '📢' },
+    { href: '/notifications', label: 'Notifications', icon: '🔔' },
   ],
   volunteer: [
     { href: '/volunteer/dashboard', label: 'Map', icon: '🗺️' },
     { href: '/volunteer/profile', label: 'Profile', icon: '👤' },
+    { href: '/notifications', label: 'Notifications', icon: '🔔' },
   ],
   ngo: [
     { href: '/ngo/dashboard', label: 'Dashboard', icon: '📊' },
     { href: '/ngo/incoming', label: 'Incoming', icon: '📥' },
     { href: '/ngo/verify', label: 'Verify', icon: '✅' },
+    { href: '/notifications', label: 'Notifications', icon: '🔔' },
   ],
   corporate: [
     { href: '/corporate/dashboard', label: 'Dashboard', icon: '📊' },
     { href: '/corporate/reports', label: 'Reports', icon: '📄' },
     { href: '/corporate/sponsors', label: 'Sponsors', icon: '🤝' },
+    { href: '/notifications', label: 'Notifications', icon: '🔔' },
   ],
 }
 

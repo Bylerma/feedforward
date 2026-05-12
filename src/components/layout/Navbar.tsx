@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useAuthStore } from '@/store/authStore'
 import { Button } from '@/components/ui/Button'
+import { NotificationBell } from '@/components/notifications/NotificationBell'
 
 interface NavbarProps {
   transparent?: boolean
@@ -23,6 +24,7 @@ export function Navbar({ transparent = false }: NavbarProps) {
           <div className="flex items-center gap-4">
             {user ? (
               <>
+                <NotificationBell />
                 <Link
                   href={`/${user.role}/dashboard`}
                   className="text-sm text-slate-600 hover:text-slate-900 transition-colors"

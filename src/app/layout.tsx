@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { AuthProvider } from '@/components/layout/AuthProvider'
+import { NotificationToast } from '@/components/notifications/NotificationToast'
 
 export const metadata: Metadata = {
   title: 'FeedForward - Turn Surplus into Sustenance',
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className="min-h-screen bg-slate-50">
         <AuthProvider>
           {children}
+          <NotificationToast />
         </AuthProvider>
       </body>
     </html>

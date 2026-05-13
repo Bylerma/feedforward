@@ -56,11 +56,7 @@ export default function LandingPage() {
               { value: 450, suffix: 'Active Volunteers', icon: '🤝' },
               { value: 180, suffix: 'Partner Outlets', icon: '🏪' },
             ].map((stat) => (
-              <div key={stat.suffix} className="text-center p-4 bg-white/80 backdrop-blur rounded-xl border border-slate-200">
-                <p className="text-2xl">{stat.icon}</p>
-                <p className="mt-1 font-mono text-2xl font-bold text-slate-900">{stat.value.toLocaleString()}+</p>
-                <p className="text-sm text-slate-500">{stat.suffix}</p>
-              </div>
+              <ImpactCounter key={stat.suffix} {...stat} />
             ))}
           </div>
         </div>
